@@ -1,0 +1,58 @@
+.postbox-container,
+.postbox-container .pbtt-postboxes { position: relative; }
+.postbox-container .pbtt-postboxes { margin-bottom: 20px; }
+
+.postbox-container .pbtt-postboxes .handlediv,
+.postbox-container .pbtt-postboxes .hndle { display: none !important; }
+
+.postbox-container .pbtt-postboxes .postbox {
+	position: absolute;
+	width: 100%;
+	visibility: hidden;
+}
+.postbox-container .pbtt-postboxes .postbox.active { visibility: visible; }
+
+.pbtt-postboxes .post-format-icon::before,
+.pbtt-postboxes .post-state-format::before { transition-property: color; }
+
+
+.pbtt-tabs { margin: 0; }
+
+.pbtt-tabs li {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	padding: 8px 12px;
+	margin: 3px 3px -1px 0;
+	border: 1px solid #dfdfdf;
+	border-bottom-color: #E5E5E5;
+	background-color: #EBEBEB;
+	color: #666;
+	font-size: 14px;
+	text-decoration: none;
+	-webkit-transition: background-color .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+					transition: background-color .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.pbtt-tabs li:hover {
+	cursor: pointer;
+	background-color: #fdfdfd;
+}
+.pbtt-tabs li.hide { display: none; }
+.pbtt-tabs li.active {
+	color: #000;
+	cursor: move;
+	font-weight: bold;
+	background-color: #FFF;
+	border-bottom-color: #FFF;
+}
+
+
+.pbtt-tabs .pbtt-placeholder { border: 1px dashed #b4b9be; }
+
+.meta-box-sortables .pbtt-placeholder {
+	list-style: none;
+	width: calc(100% - 2px) !important;
+	height: 100px !important;
+	margin-bottom: 15px;
+	border: 1px dashed #b4b9be;
+}
